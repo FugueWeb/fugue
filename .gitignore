@@ -41,10 +41,11 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/fugue-ionic
 package-lock.json
 /src/environments/environment.prod.ts
 /src/environments/environment.ts
-/src/assets/data/*
+#/src/assets/data/*
 
 # System Files
 .DS_Store

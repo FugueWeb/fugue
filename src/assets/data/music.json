@@ -1,0 +1,172 @@
+{
+    "tracks":{
+       "requiem":{
+          "title":"Requiem",
+          "short":"Requiem",
+          "composer":"Wolfgang Amadeus Mozart",
+          "life":"1756-1791",
+          "public":"Internet Archive",
+          "performer":"Community Audio",
+          "link":"https://archive.org/details/Mozart-Requiem",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194940425%3Fsecret_token%3Ds-nhgzg&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "raindrops":{
+          "title":"Prelude Op. 28 No. 15 (Raindrops)",
+          "short":"Raindrops",
+          "composer":"Frédéric Chopic",
+          "life":"1810-1849",
+          "public":"Internet Archive",
+          "performer":"Community Audio",
+          "link":"https://archive.org/details/FredericChopinPreludeOp.28No.15FromFaceOff",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195258994%3Fsecret_token%3Ds-ltjEK&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "fugato":{
+          "title":"String Quartet No. 14, C# minor, Op. 131, Mvt. I",
+          "short":"String Quartet",
+          "composer":"Ludwig van Beethoven",
+          "life":"1770-1827",
+          "public":"Internet Archive",
+          "performer":"Pascal String Quartet",
+          "link":"https://archive.org/details/BeethovenQuartetNo.14InC-sharpMinorOp.131",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195258793%3Fsecret_token%3Ds-6pMob&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "sonata31":{
+          "title":"Piano Sonata, No.31, A flat Major, Op. 110 - III. Adagio ma non troppo, IV. Fuga. Allegro, ma non troppo",
+          "short":"Piano Sonata",
+          "composer":"Ludwig van Beethoven",
+          "life":"1770-1827",
+          "public":"MusOpen",
+          "performer":"Paul Pitman",
+          "link":"https://musopen.org/music/726/ludwig-van-beethoven/piano-sonata-no31-a-flat-major-op-110/",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194940199%3Fsecret_token%3Ds-z47uq&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "ricercar":{
+          "title":"Ricercar à 6 | Musical Offering",
+          "short":"Ricercar",
+          "composer":"Johann Sebastian Bach",
+          "life":"1685-1750",
+          "public":"Youtube",
+          "performer":"Decoda",
+          "link":"https://soundcloud.com/decodamusic/bach-ricercare-from-a-musical",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/70512083&amp;color=ff5500&amp;auto_play=false&amp;show_user=false&amp;show_comments=false",
+          "soundcloud":true
+       },
+       "wtcFugueG":{
+          "title":"Fugue in g minor | Well Tempered Clavier, Book II ",
+          "short":"Fugue in G Minor",
+          "composer":"Johann Sebastian Bach",
+          "life":"1685-1750",
+          "public":"Soundcloud",
+          "performer":"Peter John",
+          "link":"https://soundcloud.com/88fingerspete/bach-fugue-in-g-minor-from-wtc-book-2",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4679174&amp;color=ff5500&amp;auto_play=false&amp;show_user=false&amp;show_comments=false",
+          "soundcloud":true
+       },
+       "fugueG":{
+          "title":"Fugue in G minor",
+          "short":"Fugue in G Minor",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Broome",
+          "link":"https://fugueweb.com",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/81957199%3Fsecret_token%3Ds-weT0q&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "away":{
+          "title":"Away",
+          "short":"Away",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston, Gary Holmes, Brad Cox, Shelly Wade",
+          "link":"https://fugueweb.com",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/81956658%3Fsecret_token%3Ds-weT0q&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "lullaby":{
+          "title":"Lullaby",
+          "short":"Lullaby",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston, Shelly Wade, Isabel Castellvi",
+          "link":"https://fugueweb.com"
+       },
+       "saved":{
+          "title":"Not all are saved",
+          "short":"Not all are saved",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston, Gary Holmes, Brad Cox",
+          "link":"https://fugueweb.com"
+       },
+       "savedshort":{
+          "title":"Not all are saved (abridged)",
+          "short":"Not all are saved",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston, Gary Holmes, Brad Cox",
+          "link":"https://fugueweb.com",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/201174259%3Fsecret_token%3Ds-CTao0&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "if":{
+          "title":"If",
+          "short":"If",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston, Shelly Wade",
+          "link":"https://fugueweb.com",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/82189209%3Fsecret_token%3Ds-weT0q&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "road":{
+          "title":"The road not taken",
+          "short":"The road not taken",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston",
+          "link":"https://fugueweb.com",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/82189376%3Fsecret_token%3Ds-weT0q&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "holdingFast":{
+          "title":"Holding Fast, Standing Long",
+          "short":"Holding Fast",
+          "composer":"David Houston",
+          "life":"1981-",
+          "public":null,
+          "performer":"David Houston",
+          "link":"https://fugueweb.com",
+          "uri":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/194940467%3Fsecret_token%3Ds-weT0q&amp;color=ff5500&amp;auto_play=false",
+          "soundcloud":true
+       },
+       "fugueA":{
+          "title":"Lute Suite in C minor | Fugue, Mvt. II",
+          "short":"Fugue in C Minor",
+          "composer":"Johann Sebastian Bach",
+          "life":"1685-1750",
+          "public":"Youtube",
+          "performer":"Göran Söllscher",
+          "link":"https://www.youtube.com/watch?v=JRTxWJi1CRc"
+       },
+       "shostakovich":{
+          "title":"String Quartet No. 7 in F# minor, Op. 108, Mvt. III",
+          "short":"String Quartet",
+          "composer":"Dmitri Shostakovich",
+          "life":"1906-1975",
+          "public":"Youtube",
+          "performer":"Emerson String Quartet",
+          "link":"https://youtu.be/XF_1ydIA1z4?t=390"
+       }
+    }
+ }
