@@ -1,1 +1,22 @@
-Home
+<router-outlet></router-outlet>
+
+<ngx-bottom-nav class="bottom-nav">
+  <button ngx-bottom-nav label="Cover" routerLink="/cover">
+    <mat-icon ngxBottomNavIcon>home</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Definition" routerLink="definition">
+    <mat-icon ngxBottomNavIcon>search</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Dedication" routerLink="dedication">
+    <mat-icon ngxBottomNavIcon>search</mat-icon>
+  </button>
+
+  <button ngx-bottom-nav label="Author" routerLink="author">
+    <mat-icon ngxBottomNavIcon>forum</mat-icon>
+  </button>
+  <button ngx-bottom-nav label="App" routerLink="app">
+    <mat-icon ngxBottomNavIcon>heart</mat-icon>
+  </button>
+</ngx-bottom-nav>

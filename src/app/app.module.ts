@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BottomNavComponent } from './components/bottom-nav/bottom-nav/bottom-nav.component';
+import { BottomNavItemComponent } from './components/bottom-nav/bottom-nav-item/bottom-nav-item.component';
+import { BottomNavModule } from 'ngx-bottom-nav';
 
 @NgModule({
   imports: [
@@ -25,6 +28,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppMaterialModule,
     HttpClientModule,
     UtilsModule,
+    BottomNavModule,
   ],
   declarations: [
     AppComponent,
@@ -33,7 +37,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AboutComponent,
     NavComponent,
     PageNotFoundComponent,
+    BottomNavComponent,
+    BottomNavItemComponent,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
