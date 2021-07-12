@@ -42,7 +42,8 @@ yarn-error.log
 testem.log
 /typings
 /fugue-ionic
-/src/environments/environment.ts
+package-lock.json
+/src/environments/environment.prod.ts
 #/src/assets/data/*
 
 # System Files
