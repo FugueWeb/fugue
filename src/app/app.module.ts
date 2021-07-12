@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BottomNavComponent } from './components/bottom-nav/bottom-nav/bottom-nav.component';
 import { BottomNavItemComponent } from './components/bottom-nav/bottom-nav-item/bottom-nav-item.component';
 import { BottomNavModule } from 'ngx-bottom-nav';
+import { CoverComponent } from './home/components/cover/cover.component';
 
 @NgModule({
   imports: [
@@ -39,6 +40,7 @@ import { BottomNavModule } from 'ngx-bottom-nav';
     PageNotFoundComponent,
     BottomNavComponent,
     BottomNavItemComponent,
+    CoverComponent,
   ],
   bootstrap: [AppComponent],
 })

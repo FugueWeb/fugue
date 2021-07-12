@@ -1,3 +1,4 @@
+import { CoverComponent } from './home/components/cover/cover.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -19,7 +20,7 @@ const routes: Routes = [
     children: [
       {
         path: 'cover',
-        component: BottomNavComponent,
+        component: CoverComponent,
       },
       {
         path: 'definition',
