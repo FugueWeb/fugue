@@ -12,6 +12,7 @@ export class CoverComponent implements OnInit, AfterViewInit {
   readonly CSS_ANIMATION_DURATION = 10000;
 
   images: string[] = ['cover_front.jpg', 'three_images.jpg', 'cover_back.jpg'];
+  slideIndex = 0;
 
   get carouselImageElements() {
     return document.getElementsByClassName(
@@ -19,9 +20,8 @@ export class CoverComponent implements OnInit, AfterViewInit {
     ) as HTMLCollectionOf<HTMLElement>;
   }
 
-  slideIndex = 0;
-
   constructor() {}
+  ngOnInit(): void {}
   ngAfterViewInit(): void {
     this.carousel();
   }
@@ -29,7 +29,7 @@ export class CoverComponent implements OnInit, AfterViewInit {
   /**
    * Starts The Carousel
    */
-  carousel() {
+  carousel(): void {
     this.hideAllImages();
     this.nextImage();
     setTimeout(() => this.carousel(), this.CSS_ANIMATION_DURATION);
@@ -38,23 +38,22 @@ export class CoverComponent implements OnInit, AfterViewInit {
   /**
    * Hides all images of the carousel
    */
-  hideAllImages() {
+  hideAllImages(): void {
     [].forEach.call(this.carouselImageElements, (item: HTMLElement) => {
       item.style.display = 'none';
     });
   }
+
   /**
    * Slides to the next image in the carousel
    */
-  nextImage() {
+  nextImage(): void {
     if (this.slideIndex >= this.carouselImageElements.length) {
       this.slideIndex = 0;
     }
     this.carouselImageElements[this.slideIndex].style.display = 'block';
     this.slideIndex++;
   }
-
-  ngOnInit(): void {}
 
   getImagePath(imageName: string): string {
     return this.BASE_PATH + imageName;
