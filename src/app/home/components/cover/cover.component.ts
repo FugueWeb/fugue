@@ -8,25 +8,50 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 export class CoverComponent implements OnInit, AfterViewInit {
   readonly BASE_PATH = '/assets/images/cover/';
 
+  readonly IMAGE_CSS_CLASS = 'carousel__image';
+  readonly CSS_ANIMATION_DURATION = 10000;
+
   images: string[] = ['cover_front.jpg', 'three_images.jpg', 'cover_back.jpg'];
-  slideIndex = 1;
+
+  get carouselImageElements() {
+    return document.getElementsByClassName(
+      this.IMAGE_CSS_CLASS
+    ) as HTMLCollectionOf<HTMLElement>;
+  }
+
+  slideIndex = 0;
 
   constructor() {}
   ngAfterViewInit(): void {
     this.carousel();
   }
 
+  /**
+   * Starts The Carousel
+   */
   carousel() {
-    var x = document.getElementsByClassName('item');
-    for (let i = 0; i < x.length; i++) {
-      (x[i] as any).style.display = 'none';
+    this.hideAllImages();
+    this.nextImage();
+    setTimeout(() => this.carousel(), this.CSS_ANIMATION_DURATION);
+  }
+
+  /**
+   * Hides all images of the carousel
+   */
+  hideAllImages() {
+    [].forEach.call(this.carouselImageElements, (item: HTMLElement) => {
+      item.style.display = 'none';
+    });
+  }
+  /**
+   * Slides to the next image in the carousel
+   */
+  nextImage() {
+    if (this.slideIndex >= this.carouselImageElements.length) {
+      this.slideIndex = 0;
     }
+    this.carouselImageElements[this.slideIndex].style.display = 'block';
     this.slideIndex++;
-    if (this.slideIndex > x.length) {
-      this.slideIndex = 1;
-    }
-    (x[this.slideIndex - 1] as any).style.display = 'block';
-    setTimeout(() => this.carousel(), 10000);
   }
 
   ngOnInit(): void {}

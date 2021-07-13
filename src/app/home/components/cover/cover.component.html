@@ -1,3 +1,5 @@
-<div *ngFor="let item of this.images">
-  <img [src]="this.getImagePath(item)" class="item" />
+<div class="carousel__wrapper">
+  <div *ngFor="let item of this.images">
+    <img [src]="this.getImagePath(item)" class="carousel__image" />
+  </div>
 </div>
