@@ -1,3 +1,4 @@
+import { AuthorComponent } from './home/components/author/author.component';
 import { CoverComponent } from './home/components/cover/cover.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -6,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BottomNavComponent } from './components/bottom-nav/bottom-nav/bottom-nav.component';
+import { DefinitionComponent } from './home/components/definition/definition.component';
+import { DedicationComponent } from './home/components/dedication/dedication.component';
+import { AppPageComponent } from './home/components/app/app.component';
 
 const routes: Routes = [
   {
@@ -24,19 +28,19 @@ const routes: Routes = [
       },
       {
         path: 'definition',
-        component: BottomNavComponent,
+        component: DefinitionComponent,
       },
       {
         path: 'dedication',
-        component: BottomNavComponent,
+        component: DedicationComponent,
       },
       {
         path: 'author',
-        component: BottomNavComponent,
+        component: AuthorComponent,
       },
       {
         path: 'app',
-        component: BottomNavComponent,
+        component: AppPageComponent,
       },
     ],
   },

@@ -19,6 +19,9 @@ import { BottomNavItemComponent } from './components/bottom-nav/bottom-nav-item/
 import { BottomNavModule } from 'ngx-bottom-nav';
 import { CoverComponent } from './home/components/cover/cover.component';
 import { ImageModalDialogComponent } from './components/image-modal-dialog/image-modal-dialog.component';
+import { DefinitionComponent } from './home/components/definition/definition.component';
+import { DedicationComponent } from './home/components/dedication/dedication.component';
+import { AuthorComponent } from './home/components/author/author.component';
 
 @NgModule({
   imports: [
@@ -43,6 +46,9 @@ import { ImageModalDialogComponent } from './components/image-modal-dialog/image
     BottomNavItemComponent,
     CoverComponent,
     ImageModalDialogComponent,
+    DefinitionComponent,
+    DedicationComponent,
+    AuthorComponent,
   ],
   bootstrap: [AppComponent],
 })
