@@ -5019,6 +5019,11 @@ ngx-bottom-nav@^11.0.0:
   dependencies:
     tslib "^2.0.0"
 
+ngx-lightbox@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/ngx-lightbox/-/ngx-lightbox-2.4.1.tgz#70e05f4c85bf04301e8a9c511f6db864e07cad4b"
+  integrity sha512-5r+PA+6Ep3PPAx22SDC6HSX/qHrVLade67hkEnJG2ZId9MkarPyFaUq5bIvS6+dXsEyckF0d+yH1fI8D6YWAvQ==
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"

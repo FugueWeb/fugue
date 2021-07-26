@@ -18,10 +18,10 @@ import { BottomNavComponent } from './components/bottom-nav/bottom-nav/bottom-na
 import { BottomNavItemComponent } from './components/bottom-nav/bottom-nav-item/bottom-nav-item.component';
 import { BottomNavModule } from 'ngx-bottom-nav';
 import { CoverComponent } from './home/components/cover/cover.component';
-import { ImageModalDialogComponent } from './components/image-modal-dialog/image-modal-dialog.component';
 import { DefinitionComponent } from './home/components/definition/definition.component';
 import { DedicationComponent } from './home/components/dedication/dedication.component';
 import { AuthorComponent } from './home/components/author/author.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   imports: [
@@ -34,6 +34,7 @@ import { AuthorComponent } from './home/components/author/author.component';
     HttpClientModule,
     UtilsModule,
     BottomNavModule,
+    LightboxModule,
   ],
   declarations: [
     AppComponent,
@@ -45,7 +46,6 @@ import { AuthorComponent } from './home/components/author/author.component';
     BottomNavComponent,
     BottomNavItemComponent,
     CoverComponent,
-    ImageModalDialogComponent,
     DefinitionComponent,
     DedicationComponent,
     AuthorComponent,

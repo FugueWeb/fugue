@@ -1,1 +1,122 @@
-<p>definition works!</p>
+<div class="scroll">
+  <p>
+    Fugue: ['fyug] noun<br />from the Latin <em>fuga</em>, meaning
+    <em>to take flight, fleeing</em>
+  </p>
+  <p>
+    1. <em>In music</em>: a musical composition in which one melodic subject is
+    proposed and answered, then restated or imitated by other successively
+    entered parts and contrapuntally developed in a continuous interweaving of
+    the voices
+  </p>
+  <p>
+    2. <em>In psychology</em>: a disturbed state in which an individual seems to
+    perform acts in full awareness but upon recovery cannot assume
+    responsibility for the acts performed; a dissociative disorder characterized
+    by a dreamlike state of altered consciousness
+  </p>
+  <div class="authorImages">
+    <span *ngFor="let image of images; let i = index" style="margin: 8px">
+      <img [src]="image.thumb" style="width: 100px" (click)="openImage(i)" />
+    </span>
+  </div>
+  <div style="clear: both"></div>
+  <h2>Anatomy of fugue</h2>
+  <p>
+    <strong>Subject:</strong> Melody that comprises the primary melodic/rhythmic
+    material of the fugue. Subjects typically have two parts: the "head" is
+    calculated to attract attention either by unusual rhythmic or intervallic
+    emphasis, while the "tail" is typically more conjunct, rhythmically uniform,
+    and sometimes modulatory. The head and/or tail itself may employ variation
+    of one or two smaller motives or figures, each comprised of a characteristic
+    rhythm and/or interval.
+  </p>
+  <p>
+    <strong>Countersubject:</strong> Substantive figure that sometimes recurs
+    immediately following the subject or answer (in the same voice).
+    Countersubjects serve as counterpoint to subjects (or answers) sounding
+    simultaneously in a different voice. Not every fugue will have a
+    countersubject. Some fugues may have more than one countersubject.
+  </p>
+  <p>
+    <strong>Answer:</strong> Subject imitation which immediately follows the
+    first statement of the subject: in a different voice and usually a fifth
+    higher. Answers are a subclass of subjects which bear certain interval
+    characteristics in relationship to the subject as it was originally stated.
+  </p>
+  <p>
+    <strong>Tonal Answer:</strong> An answer that differs slightly from the
+    subject, frequently due to the prominence of dominant notes in the subject
+    itself. For instance, in a tonal answer "do" and "sol" may switch places:
+    The position occupied by "do," in the subject, becomes "sol" in the answer
+    and vice versa.
+  </p>
+  <p>
+    <strong>Real Answer:</strong> An answer that is a direct transposition of
+    the subject to another key, usually the dominant.
+  </p>
+  <h3 style="font-family: Cinzel">Main sections</h3>
+  <p>
+    <strong>Exposition:</strong> Portion(s) of the fugue consisting of
+    subject(s) with at least one answer, and possibly countersubject(s). To
+    qualify as an exposition, the subject (or answer) must appear in all voices
+    and answers must be in the proper relationship (tonal or real) to subjects.
+    The exposition normally concludes immediately after the subject (or answer)
+    appears in the last voice.
+  </p>
+  <p>
+    <strong>Developmental Episode:</strong> Section in which motives from the
+    exposition are treated in sequence, contrary motion, modulation, double
+    counterpoint, stretto, augmentation/diminution, pedal, etc. Episodes are
+    generally terminated by a cadence and may follow one after the other.
+    Developmental episodes characteristically begin by departing from the
+    subject, to fragment or vary it in some way, but gradually building up to a
+    restatement of the subject in at least one voice. These statements of the
+    subject are typically not in the tonic/dominant relationship of the
+    exposition.
+  </p>
+  <p>
+    <strong>Coda or Codetta:</strong> Concluding segment of a section (codetta)
+    or of the entire fugue (coda). Codas and codettas often sound as if they are
+    something added after the structural end of the section or work.
+  </p>
+  <h3 style="font-family: Cinzel">Compositional techniques</h3>
+  <p><strong>Modulation:</strong> Repetition of a motive in another key.</p>
+  <p>
+    <strong>Mutation:</strong> Statement of the subject or answer (or any other
+    primary material) in the opposing mode. A subject first stated in minor and
+    later stated in major is said to have "mutated."
+  </p>
+  <p>
+    <strong>Stretto:</strong> Entry of a motive in a second voice before the
+    first voice has finished its statement. Motive can mean subject, answer,
+    countersubject, or any other substantive melodic/rhythmic entity in
+    imitation.
+  </p>
+  <p>
+    <strong>Augmentation/Diminution:</strong> Statement of a motive in rhythmic
+    durations that are proportionately doubled or halved.
+  </p>
+  <p>
+    <strong>Pedal Point:</strong> Suspension of one pitch, often the bass, in
+    such a manner that it is alternately consonant then dissonant with the chord
+    progression. Fugues often conclude with episodes of pedal point.
+  </p>
+  <p>
+    <strong>Retrograde:</strong> Statement of the motive's pitches in reverse
+    order.
+  </p>
+  <p>
+    <strong>Melodic Inversion:</strong> Statement of a motive where interval
+    directions have been made to move in the opposite direction of the original
+    motive. If the quality of the intervals is preserved the motion is said to
+    be the "mirror inversion."
+  </p>
+  <p>
+    <strong>Sequence:</strong> Repetition of a motive at another pitch level,
+    usually up or down a step.
+  </p>
+  <p style="color: #c1272d">
+    <a ng-click="iab('http://www2.nau.edu/tas3/fugueanatomy.html')">Source</a>
+  </p>
+</div>
