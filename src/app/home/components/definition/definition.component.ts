@@ -7,6 +7,7 @@ import { IAlbum, Lightbox } from 'ngx-lightbox';
   styleUrls: ['./definition.component.css'],
 })
 export class DefinitionComponent implements OnInit {
+  // Add to something like "Image Service"
   images: IAlbum[] = [
     {
       src: '/assets/images/definition/fugue1.jpg',
@@ -26,15 +27,13 @@ export class DefinitionComponent implements OnInit {
   ngOnInit(): void {}
 
   openImage(index: number): void {
-    // open lightbox
     this._lightbox.open(this.images, index, {
       wrapAround: true,
-      showImageNumberLabel: true,
+      showImageNumberLabel: false,
     });
   }
 
   close(): void {
-    // close lightbox programmatically
     this._lightbox.close();
   }
 }

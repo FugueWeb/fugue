@@ -22,7 +22,8 @@ import { DefinitionComponent } from './home/components/definition/definition.com
 import { DedicationComponent } from './home/components/dedication/dedication.component';
 import { AuthorComponent } from './home/components/author/author.component';
 import { LightboxModule } from 'ngx-lightbox';
-
+import { ChapterPageComponent } from './components/bottom-nav/chapter-page/chapter-page/chapter-page.component';
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   imports: [
     BrowserModule,
@@ -35,6 +36,7 @@ import { LightboxModule } from 'ngx-lightbox';
     UtilsModule,
     BottomNavModule,
     LightboxModule,
+    SwiperModule,
   ],
   declarations: [
     AppComponent,
@@ -49,6 +51,7 @@ import { LightboxModule } from 'ngx-lightbox';
     DefinitionComponent,
     DedicationComponent,
     AuthorComponent,
+    ChapterPageComponent,
   ],
   bootstrap: [AppComponent],
 })

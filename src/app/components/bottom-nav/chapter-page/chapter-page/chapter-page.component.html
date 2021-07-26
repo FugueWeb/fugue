@@ -1,0 +1,5 @@
+<swiper [slidesPerView]="1" [pagination]="true">
+  <ng-template swiperSlide *ngFor="let page of pages">
+    <div [innerHTML]="page.page"></div>
+  </ng-template>
+</swiper>
