@@ -24,6 +24,7 @@ import { AuthorComponent } from './home/components/author/author.component';
 import { LightboxModule } from 'ngx-lightbox';
 import { ChapterPageComponent } from './components/bottom-nav/chapter-page/chapter-page/chapter-page.component';
 import { SwiperModule } from 'swiper/angular';
+import { UnsafeHtmlPipe } from './pipes/unsafe-html.pipe';
 @NgModule({
   imports: [
     BrowserModule,
@@ -52,6 +53,7 @@ import { SwiperModule } from 'swiper/angular';
     DedicationComponent,
     AuthorComponent,
     ChapterPageComponent,
+    UnsafeHtmlPipe,
   ],
   bootstrap: [AppComponent],
 })
