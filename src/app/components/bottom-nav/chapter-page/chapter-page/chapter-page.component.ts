@@ -1,3 +1,4 @@
+import { SoundcloudService } from './../../../../services/soundcloud.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import prelude from 'src/assets/data/prelude.json';
 
@@ -32,7 +33,7 @@ export class ChapterPageComponent implements OnInit {
   // Example data
   pages = prelude.prelude.prelude as Array<any>;
 
-  constructor() {}
+  constructor(private readonly soundcloudService: SoundcloudService) {}
 
   ngOnInit(): void {}
 
@@ -60,8 +61,7 @@ export class ChapterPageComponent implements OnInit {
           `Adding Event Listener to open track with name ${linkParam}`
         );
         element.addEventListener('click', () => {
-          // Todo: Using Soundcloud Service here
-          console.log('Should open Track with Name: ' + linkParam);
+          this.soundcloudService.openSoundcloudLink(linkParam as string);
         });
         break;
       }
