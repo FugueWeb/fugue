@@ -1,4 +1,8 @@
 import {
+  BookmarkService,
+  UnsafeBookmarkMap,
+} from './../../../../services/bookmark.service';
+import {
   SoundcloudService,
   SoundcloudTitles,
 } from './../../../../services/soundcloud.service';
@@ -36,7 +40,14 @@ export class ChapterPageComponent implements OnInit {
   // Example data
   pages = prelude.prelude.prelude as Array<any>;
 
-  constructor(private readonly soundcloudService: SoundcloudService) {}
+  constructor(
+    private readonly soundcloudService: SoundcloudService,
+    private readonly bookmarkService: BookmarkService
+  ) {
+    this.bookmarkService.bookmarkMap$.subscribe((item) => {
+      console.log(item);
+    });
+  }
 
   ngOnInit(): void {}
 
@@ -73,5 +84,9 @@ export class ChapterPageComponent implements OnInit {
       default:
         console.warn(`Did not match ${linkType}`);
     }
+  }
+
+  toggleBookmark(page: any) {
+    this.bookmarkService.toggleBookmark({ title: 'prelude', page: 1 });
   }
 }
