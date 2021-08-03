@@ -55,3 +55,7 @@ h1.example-app-name {
 .active-link {
   color: #b31121;
 }
+
+.container__main {
+  margin: 12px;
+}

@@ -25,6 +25,7 @@ import { LightboxModule } from 'ngx-lightbox';
 import { ChapterPageComponent } from './components/bottom-nav/chapter-page/chapter-page/chapter-page.component';
 import { SwiperModule } from 'swiper/angular';
 import { UnsafeHtmlPipe } from './pipes/unsafe-html.pipe';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [
     BrowserModule,
@@ -38,6 +39,7 @@ import { UnsafeHtmlPipe } from './pipes/unsafe-html.pipe';
     BottomNavModule,
     LightboxModule,
     SwiperModule,
+    FlexLayoutModule,
   ],
   declarations: [
     AppComponent,

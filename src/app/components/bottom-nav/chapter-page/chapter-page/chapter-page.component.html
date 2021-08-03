@@ -1,10 +1,14 @@
-<swiper
-  [slidesPerView]="1"
-  [pagination]="true"
-  (swiper)="this.onSwipe($event)"
-  (slideChange)="this.onSwipe($event)"
->
-  <ng-template swiperSlide *ngFor="let page of pages; let i = index">
-    <div [innerHTML]="page.page | unsafeHtml"></div>
-  </ng-template>
-</swiper>
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="32px">
+  <div class="container__swiper">
+    <swiper
+      [slidesPerView]="1"
+      [pagination]="true"
+      (swiper)="this.onSwipe($event)"
+      (slideChange)="this.onSwipe($event)"
+    >
+      <ng-template swiperSlide *ngFor="let page of pages; let i = index">
+        <div [innerHTML]="page.page | unsafeHtml"></div>
+      </ng-template>
+    </swiper>
+  </div>
+</div>
