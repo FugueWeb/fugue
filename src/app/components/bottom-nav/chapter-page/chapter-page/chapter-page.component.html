@@ -1,7 +1,10 @@
-<swiper [slidesPerView]="1" [pagination]="true">
-  <ng-template swiperSlide *ngFor="let page of pages">
-    <!--Todo: Change to more visible bookmark -->
-    <button (click)="this.toggleBookmark(page)">Add Bookmark</button>
+<swiper
+  [slidesPerView]="1"
+  [pagination]="true"
+  (swiper)="this.onSwipe($event)"
+  (slideChange)="this.onSwipe($event)"
+>
+  <ng-template swiperSlide *ngFor="let page of pages; let i = index">
     <div [innerHTML]="page.page | unsafeHtml"></div>
   </ng-template>
 </swiper>

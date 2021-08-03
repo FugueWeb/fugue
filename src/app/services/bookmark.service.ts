@@ -36,6 +36,27 @@ export class BookmarkService {
     this.loadBookmarksFromLocalStorage();
   }
 
+  toggleBookmarkByRoute(url: string) {
+    if (!url.includes('chapter')) {
+      return;
+    }
+    const parts = url.split('/');
+
+    const chapterName = parts[2];
+    const chapterPage = Number(parts[3]);
+    const key = buildBookmarkKey({
+      page: chapterPage,
+      title: chapterName as TitleKey,
+    });
+
+    const item = (this.bookmarkMap as UnsafeBookmarkMap)[key];
+    if (item) {
+      this.removeBookmark(key);
+      return;
+    }
+    this.setBookmark({ page: chapterPage, title: chapterName as TitleKey });
+  }
+
   toggleBookmark(page: PageIdentifier) {
     const key = buildBookmarkKey(page);
     const item = (this.bookmarkMap as UnsafeBookmarkMap)[key];
@@ -65,6 +86,22 @@ export class BookmarkService {
     this.bookmarkMapSubject.next(this.bookmarkMap);
     this.saveBookmarkMapToLocalStorage();
   }
+
+  isAlreadyBookmarked(url: string) {
+    if (!url.includes('chapter')) {
+      return false;
+    }
+    const parts = url.split('/');
+    const chapterName = parts[2];
+    const chapterPage = Number(parts[3]);
+
+    const bookmark = this.getBookmark(
+      buildBookmarkKey({ page: chapterPage, title: chapterName as TitleKey })
+    );
+    return bookmark != undefined;
+  }
+
+  private getBookmarkKeyByUrl() {}
 
   private saveBookmarkMapToLocalStorage() {
     localStorage.setItem(

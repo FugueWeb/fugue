@@ -10,6 +10,7 @@ import { BottomNavComponent } from './components/bottom-nav/bottom-nav/bottom-na
 import { DefinitionComponent } from './home/components/definition/definition.component';
 import { DedicationComponent } from './home/components/dedication/dedication.component';
 import { AppPageComponent } from './home/components/app/app.component';
+import { ChapterPageComponent } from './components/bottom-nav/chapter-page/chapter-page/chapter-page.component';
 
 const routes: Routes = [
   {
@@ -45,8 +46,8 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'about',
-    component: AboutComponent,
+    path: 'chapter/:chapterName/:chapterPage',
+    component: ChapterPageComponent,
     data: { title: 'About | Fugue' },
   },
   {
