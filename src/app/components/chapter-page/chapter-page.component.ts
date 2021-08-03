@@ -2,11 +2,11 @@ import {
   BookmarkMap,
   BookmarkService,
   UnsafeBookmarkMap,
-} from './../../../../services/bookmark.service';
+} from './../../services/bookmark.service';
 import {
   SoundcloudService,
   SoundcloudTitles,
-} from './../../../../services/soundcloud.service';
+} from './../../services/soundcloud.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import prelude from 'src/assets/data/prelude.json';
 

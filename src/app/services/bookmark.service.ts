@@ -2,6 +2,7 @@ import { TitleKey } from './../models/part-titles';
 import { SoundcloudTrack } from './soundcloud.service';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export interface PageIdentifier {
   title: TitleKey;
@@ -32,7 +33,7 @@ export class BookmarkService {
   private readonly bookmarkMapSubject = new BehaviorSubject<BookmarkMap>({});
   bookmarkMap$ = this.bookmarkMapSubject.asObservable();
 
-  constructor() {
+  constructor(private readonly _snackBar: MatSnackBar) {
     this.loadBookmarksFromLocalStorage();
   }
 
@@ -75,6 +76,9 @@ export class BookmarkService {
     };
     this.bookmarkMapSubject.next(this.bookmarkMap);
     this.saveBookmarkMapToLocalStorage();
+    this._snackBar.open('Successfully added Bookmark', 'OK', {
+      duration: 2500,
+    });
   }
 
   getBookmark(key: BookmarkKey): Bookmark | undefined {
@@ -85,6 +89,7 @@ export class BookmarkService {
     (this.bookmarkMap as UnsafeBookmarkMap)[key] = undefined;
     this.bookmarkMapSubject.next(this.bookmarkMap);
     this.saveBookmarkMapToLocalStorage();
+    this._snackBar.open('Successfully removed Bookmark');
   }
 
   isAlreadyBookmarked(url: string) {
@@ -100,8 +105,6 @@ export class BookmarkService {
     );
     return bookmark != undefined;
   }
-
-  private getBookmarkKeyByUrl() {}
 
   private saveBookmarkMapToLocalStorage() {
     localStorage.setItem(

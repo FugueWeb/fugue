@@ -16,6 +16,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -37,6 +38,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatProgressSpinnerModule,
     MatSliderModule,
     MatCheckboxModule,
+    MatSnackBarModule,
   ],
   exports: [
     MatGridListModule,

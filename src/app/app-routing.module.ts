@@ -4,13 +4,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { BottomNavComponent } from './components/bottom-nav/bottom-nav/bottom-nav.component';
 import { DefinitionComponent } from './home/components/definition/definition.component';
 import { DedicationComponent } from './home/components/dedication/dedication.component';
 import { AppPageComponent } from './home/components/app/app.component';
-import { ChapterPageComponent } from './components/bottom-nav/chapter-page/chapter-page/chapter-page.component';
+import { ChapterPageComponent } from './components/chapter-page/chapter-page.component';
 
 const routes: Routes = [
   {
