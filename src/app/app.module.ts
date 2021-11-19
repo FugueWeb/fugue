@@ -14,7 +14,16 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { BottomNavModule } from 'ngx-bottom-nav';
+import { CoverComponent } from './home/components/cover/cover.component';
+import { DefinitionComponent } from './home/components/definition/definition.component';
+import { DedicationComponent } from './home/components/dedication/dedication.component';
+import { AuthorComponent } from './home/components/author/author.component';
+import { LightboxModule } from 'ngx-lightbox';
+import { ChapterPageComponent } from './components/chapter-page/chapter-page.component';
+import { SwiperModule } from 'swiper/angular';
+import { UnsafeHtmlPipe } from './pipes/unsafe-html.pipe';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,6 +34,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppMaterialModule,
     HttpClientModule,
     UtilsModule,
+    BottomNavModule,
+    LightboxModule,
+    SwiperModule,
+    FlexLayoutModule,
   ],
   declarations: [
     AppComponent,
@@ -33,7 +46,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AboutComponent,
     NavComponent,
     PageNotFoundComponent,
+    CoverComponent,
+    DefinitionComponent,
+    DedicationComponent,
+    AuthorComponent,
+    ChapterPageComponent,
+    UnsafeHtmlPipe,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

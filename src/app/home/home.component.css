@@ -10,7 +10,9 @@
 a {
   text-decoration: none;
 }
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -51,7 +53,8 @@ h4 {
 @media (max-width: 600px) {
   .module {
     font-size: 10px;
-    max-height: 75px; }
+    max-height: 75px;
+  }
 }
 @media (max-width: 1024px) {
   .grid {
@@ -78,13 +81,18 @@ h4 {
   -webkit-tap-highlight-color: transparent;
 }
 .mat-ripple h2 {
-    text-shadow: 1px 0px 2px black;
-    color: white;
+  text-shadow: 1px 0px 2px black;
+  color: white;
 }
-mat-grid-tile{
-    background-repeat:no-repeat;
-    background-position:center;    
+mat-grid-tile {
+  background-repeat: no-repeat;
+  background-position: center;
 }
-mat-spinner{
-    margin: 30px auto;
+mat-spinner {
+  margin: 30px auto;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
 }

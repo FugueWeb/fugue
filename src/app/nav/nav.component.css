@@ -47,10 +47,6 @@ h1.example-app-name {
   flex: 1 1 auto;
 }
 
-mat-sidenav-content {
-  padding: 1%;
-}
-
 .mat-toolbar.mat-primary {
   background: #b31121;
   color: #fff;
@@ -58,4 +54,8 @@ mat-sidenav-content {
 
 .active-link {
   color: #b31121;
+}
+
+.container__main {
+  margin: 12px;
 }
